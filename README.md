@@ -14,9 +14,12 @@
     
 4. NNext add it in the providers and aliases section, open the config/app.php folder :
     
-    providers =>[
-     Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
-    ],
+    providers : 
+    
+    $ Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+    
+    aliases : 
     
     $ 'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+    
     $ 'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
