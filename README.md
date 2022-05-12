@@ -12,7 +12,7 @@
 
     $ composer require tymon/jwt-auth:dev-develop --prefer-source
     
-4. NNext add it in the providers and aliases section, open the config/app.php folder :
+4. Next add it in the providers and aliases section, open the config/app.php folder :
     
     providers : 
     
@@ -23,3 +23,5 @@
     $ 'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
     
     $ 'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+    
+5. 
