@@ -131,6 +131,21 @@
                 ],
             ],
 
+9. Then create a UserController to create the register and login functions :
+
+        php artisan make:controller UserController
+
+10. After that open the UserController in the `app/Http/Controller/UserController.php` folder and follow the code below :
+
+        
+
+
+
+
+
+
+
+
 
 
 
