@@ -24,4 +24,16 @@
     
     $ 'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
     
-5. 
+
+
+
+NB: gunakan `git --help` untuk melihat perintah-perintah git lainnya.
+
+1. Cloning project yang sudah anda fork ke akun anda
+
+        git clone <alamat-repo>
+
+    Contoh:
+
+        git clone git@github.com:CreatorB/MaterialTabs.git
+
