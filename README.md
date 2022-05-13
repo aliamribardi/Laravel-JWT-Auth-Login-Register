@@ -6,34 +6,23 @@
   
 2. wait until the installation process is complete, when finished go to the project folder :
 
-    $ cd Project-Name
+        cd Project-Name
   
 3. install JWT package :
 
-    $ composer require tymon/jwt-auth:dev-develop --prefer-source
-    
+        composer require tymon/jwt-auth:dev-develop --prefer-source
+  
 4. Next add it in the providers and aliases section, open the config/app.php folder :
     
     providers : 
     
-    $ Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
-    
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+  
     aliases : 
     
-    $ 'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
-    
-    $ 'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
-    
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+  
 
 
-
-NB: gunakan `git --help` untuk melihat perintah-perintah git lainnya.
-
-1. Cloning project yang sudah anda fork ke akun anda
-
-        git clone <alamat-repo>
-
-    Contoh:
-
-        git clone git@github.com:CreatorB/MaterialTabs.git
 
