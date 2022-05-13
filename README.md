@@ -110,7 +110,26 @@
             }    
         }
 
+8. Place the following code in the `config/auth.php` file :
 
+        <?php
+        return [
+            'defaults' => [
+                'guard' => 'api',
+                'passwords' => 'users',
+            ],
+
+            'guards' => [
+                'web' => [
+                    'driver' => 'session',
+                    'provider' => 'users',
+                ],
+                'api' => [
+                    'driver' => 'jwt',
+                    'provider' => 'users',
+                    'hash' => false,
+                ],
+            ],
 
 
 
