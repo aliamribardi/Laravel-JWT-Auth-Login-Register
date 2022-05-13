@@ -17,6 +17,10 @@
         DB_USERNAME=root (customized)
         DB_PASSWORD= (customized)
 
+4. after finished setting up `.env`, then migrate :
+
+        php artisan migrate
+
 4. install JWT package :
 
        composer require tymon/jwt-auth:dev-develop --prefer-source
