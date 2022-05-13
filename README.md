@@ -225,6 +225,16 @@
 
                 return response()->json(compact('user'));
             }
+            
+            /**
+             * Log the user out (Invalidate the token).
+             *
+             * @return \Illuminate\Http\JsonResponse
+             */
+            public function logout() {
+                auth()->logout();
+                return response()->json(['message' => 'User successfully signed out']);
+            }
 
         }
 
