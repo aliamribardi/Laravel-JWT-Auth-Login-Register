@@ -31,7 +31,21 @@
 
         php artisan jwt:secret
         
-7. isi
+7. copy :
+
+        use Tymon\JWTAuth\Contracts\JWTSuject 
+   
+   then paste it before the User model. copy too :
+   
+        public function getJWTIdentifier() {
+        return $this->getKey();
+        }
+    
+        public function getJWTCustomClaims() {
+            return [];
+        }
+    
+   like the example below or you can directly copy :
 
         <?php
 
