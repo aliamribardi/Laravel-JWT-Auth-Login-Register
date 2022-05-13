@@ -8,7 +8,16 @@
 
        cd Project-Name
   
-3. install JWT package :
+3. after creating new Laravel application, now to save registration data, user has to create database in MySQL and add database name, username and password in `.env` file :
+
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=jwt (customized)
+        DB_USERNAME=root (customized)
+        DB_PASSWORD= (customized)
+
+4. install JWT package :
 
        composer require tymon/jwt-auth:dev-develop --prefer-source
   
